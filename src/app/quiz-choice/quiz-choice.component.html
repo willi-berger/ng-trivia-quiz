@@ -1,0 +1,19 @@
+<p>
+  Select level and category
+</p>
+<form >
+    <div>
+      <label for="difficulty">Level</label>
+      <select id="difficulty" name="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div>
+      <label for="category">Category</label>
+      <select name="category" id="category"> 
+        <option *ngFor="let category of categories"  value="{{category.id}}">{{category.name}}</option>
+      </select>
+    </div>
+  </form>
